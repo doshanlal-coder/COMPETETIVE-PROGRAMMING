@@ -71,4 +71,47 @@
 //     return 0;
 // }
 
-//5//
+//5//Bit++
+
+
+// #include <iostream>
+// using namespace std;
+// int  main(){
+//     int n;
+//     int x=0;
+//     string oper;
+//     cin>>n;
+//     for(int i=1; i<=n ; i++){
+//         cin>>oper;
+//         ((oper[1]=='+')? x++: x--);
+//     }
+//     cout<<x;
+//     return 0;
+// }
+
+//6//Next Round
+
+#include <iostream>
+#include <vector>
+using namespace std;
+int main (){
+    int n,k;
+    int part=0;
+    vector <int> score;
+    cin>>n>>k;
+
+    for(int i=0; i<n ; i++){
+        int s;
+        cin>>s;
+        score.push_back(s);
+    }
+    for(int i=0; i<n ; i++){
+       if(score[i]>=score[k-1] and score[i]>0){
+        part++; 
+       }
+    }
+
+
+    cout<<part;
+    return 0;
+}
