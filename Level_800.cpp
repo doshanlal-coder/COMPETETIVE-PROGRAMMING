@@ -91,27 +91,51 @@
 
 //6//Next Round
 
-#include <iostream>
-#include <vector>
-using namespace std;
-int main (){
-    int n,k;
-    int part=0;
-    vector <int> score;
-    cin>>n>>k;
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+// int main (){
+//     int n,k;
+//     int part=0;
+//     vector <int> score;
+//     cin>>n>>k;
 
-    for(int i=0; i<n ; i++){
-        int s;
-        cin>>s;
-        score.push_back(s);
-    }
-    for(int i=0; i<n ; i++){
-       if(score[i]>=score[k-1] and score[i]>0){
-        part++; 
-       }
-    }
+//     for(int i=0; i<n ; i++){
+//         int s;
+//         cin>>s;
+//         score.push_back(s);
+//     }
+//     for(int i=0; i<n ; i++){
+//        if(score[i]>=score[k-1] and score[i]>0){
+//         part++; 
+//        }
+//     }
 
 
-    cout<<part;
-    return 0;
-}
+//     cout<<part;
+//     return 0;
+// }
+
+
+//7// Domino Pilling
+
+// #include <iostream>
+// using namespace std;
+// int main (){
+//     int m, n ;
+//     cin>>m>>n;
+
+//     cout<<((n%2==0)? m*(n/2) : m*(n/2)+(m/2));
+//     return 0;
+// }
+
+
+//OR
+// #include <iostream>
+// using namespace std;
+// int main (){
+//     int m, n ;
+//     cin>>m>>n;
+//     cout<<(m*n)/2;
+//     return 0;
+// }
