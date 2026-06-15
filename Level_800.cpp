@@ -139,3 +139,24 @@
 //     cout<<(m*n)/2;
 //     return 0;
 // }
+
+
+//8/ Boy Or Girl
+
+#include <iostream>
+using namespace std;
+int main (){
+    string name;
+    int count=0;
+    cin>>name;
+    for(char ch='a' ;ch<='z'; ch++){
+        for(int i=0; i<name.size(); i++){
+            if(ch==name[i]){
+                count++;
+                break;
+            }
+        }
+    }
+    cout<<((count%2==0)? "CHAT WITH HER!": "IGNORE HIM!");
+    return 0;
+}
