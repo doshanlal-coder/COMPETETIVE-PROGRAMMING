@@ -31,25 +31,27 @@
 
 //OR
 
-#include <iostream>
-using namespace std;
-int main (){
-    string str;
-    cin>>str;
-    int streak=1;
-    for(int i=1;i<str.size(); i++){
-        if(str[i]==str[i-1]){
-            streak++;
-        }else{
-            streak=1;
-        }
+// #include <iostream>
+// using namespace std;
+// int main (){
+//     string str;
+//     cin>>str;
+//     int streak=1;
+//     for(int i=1;i<str.size(); i++){
+//         if(str[i]==str[i-1]){
+//             streak++;
+//         }else{
+//             streak=1;
+//         }
 
-        if(streak>=7){
-            cout<<"YES";
-            return 0;
-        }
-    }
+//         if(streak>=7){
+//             cout<<"YES";
+//             return 0;
+//         }
+//     }
     
-    cout<<"NO";
-    return 0;
-}
+//     cout<<"NO";
+//     return 0;
+// }
+
+

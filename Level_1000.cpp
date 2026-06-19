@@ -42,20 +42,90 @@
 
 //P// Young Physicist
 
-#include <iostream>
-using namespace std;
-int main (){
-    int n;
-    cin>>n;
-    int x=0, y=0, z=0;
-    int xn, yn, zn ;
-    for(int i=0; i<n; i++){
-        cin>>xn>>yn>>zn;
+// #include <iostream>
+// using namespace std;
+// int main (){
+//     int n;
+//     cin>>n;
+//     int x=0, y=0, z=0;
+//     int xn, yn, zn ;
+//     for(int i=0; i<n; i++){
+//         cin>>xn>>yn>>zn;
 
-        x+=xn;
-        y+=yn;
-        z+=zn;
-    }
-    cout<<((x==0 and y==0 and z==0)? "YES" : "NO");
-    return 0;
-}
+//         x+=xn;
+//         y+=yn;
+//         z+=zn;
+//     }
+//     cout<<((x==0 and y==0 and z==0)? "YES" : "NO");
+//     return 0;
+// }
+
+
+
+//Problem// Chat Room
+
+// #include <iostream>
+// using namespace std;
+// int main (){
+//     string s="hello";
+//     string chat;
+//     cin>>chat;
+//     int index =0;
+//     bool boo=false;
+
+//     for(int i=0; i<s.size(); i++){
+//         boo=false;
+//         for(int j = index;j<chat.size(); j++){
+//             if(s[i]==chat[j]){
+                
+//                 index=j+1;
+//                 boo=true;
+//                 break;
+//             }else{
+//                 boo=false;
+//             }
+//         }
+//         if(!boo){
+//         cout<<"NO";
+//         return 0;
+//     } 
+
+//     }
+//     if(boo){
+//         cout<<"YES";
+//     }   
+        
+// }
+
+
+//Problem? Expression
+
+// #include <iostream>
+// using namespace std;
+// int main (){
+//     int a,b,c;
+//     cin>>a>>b>>c;
+//     int arr[6]={a+b+c,a+(b*c),(a*b)+c,a*b*c,a*(b+c),(a+b)*c};
+//     int result=0;
+//     for(int i=0; i<6; i++){
+//         if(arr[i]>=result){
+//             result=arr[i];
+//         }
+
+//     }
+//     cout<<result;
+// }
+
+//OR
+
+
+// #include <iostream>
+// #include <algorithm>
+// using namespace std;
+// int main (){
+//     int a,b,c;
+//     cin>>a>>b>>c;
+
+//     cout<<max({a+b+c,a+(b*c),(a*b)+c,a*b*c,a*(b+c),(a+b)*c});
+//     return 0;
+// }
