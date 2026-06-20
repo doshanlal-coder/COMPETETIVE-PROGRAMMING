@@ -1,4 +1,4 @@
-//1//Theatre square
+// 1//Theatre square
 
 // #include <iostream>
 // using namespace std;
@@ -9,7 +9,7 @@
 //     return 0;
 // }
 
-//2/ String Task
+// 2/ String Task
 
 // #include <iostream>
 // using namespace std;
@@ -35,12 +35,11 @@
 //         str+=newStr[i];
 //     }
 
-
 //     cout<<str;
 //     return 0;
 // }
 
-//P// Young Physicist
+// P// Young Physicist
 
 // #include <iostream>
 // using namespace std;
@@ -60,9 +59,7 @@
 //     return 0;
 // }
 
-
-
-//Problem// Chat Room
+// Problem// Chat Room
 
 // #include <iostream>
 // using namespace std;
@@ -77,7 +74,7 @@
 //         boo=false;
 //         for(int j = index;j<chat.size(); j++){
 //             if(s[i]==chat[j]){
-                
+
 //                 index=j+1;
 //                 boo=true;
 //                 break;
@@ -88,17 +85,16 @@
 //         if(!boo){
 //         cout<<"NO";
 //         return 0;
-//     } 
+//     }
 
 //     }
 //     if(boo){
 //         cout<<"YES";
-//     }   
-        
+//     }
+
 // }
 
-
-//Problem? Expression
+// Problem? Expression
 
 // #include <iostream>
 // using namespace std;
@@ -116,8 +112,7 @@
 //     cout<<result;
 // }
 
-//OR
-
+// OR
 
 // #include <iostream>
 // #include <algorithm>
@@ -129,3 +124,24 @@
 //     cout<<max({a+b+c,a+(b*c),(a*b)+c,a*b*c,a*(b+c),(a+b)*c});
 //     return 0;
 // }
+
+// Problem/ Lucky Division
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin >> n;
+
+//     if (n % 4 == 0 or n % 7 == 0 or n % 47 == 0 or n % 44 == 0 or n % 77 == 0 or n % 74 == 0 or n % 444 == 0 or n % 447 == 0 or n % 474 == 0 or n % 477 == 0 or n % 744 == 0 or n % 747 == 0 or n % 774 == 0 or n % 777 == 0)
+//     {
+//         cout << "YES";
+//     }
+//     else
+//     {
+//         cout << "NO";
+//     }
+//     return 0;
+// }
+
