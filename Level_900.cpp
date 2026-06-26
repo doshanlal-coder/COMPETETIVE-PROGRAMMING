@@ -90,8 +90,7 @@
 //     return 0;
 // }
 
-
-//Problem//Gravity flip
+// Problem//Gravity flip
 
 // #include <iostream>
 // #include <vector>
@@ -108,6 +107,26 @@
 
 //     for(int i=0; i<n; i++){
 //         cout<<vec[i]<<" ";
+//     }
+//     return 0;
+// }
+
+// PRoblem// even odds
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     long long n, k;
+//     cin >> n >> k;
+//     long long odds = (n + 1) / 2;
+//     if (k <= odds)
+//     {
+//         cout << (2 * k - 1);
+//     }
+//     else
+//     {
+//         cout << 2 * (k - odds);
 //     }
 //     return 0;
 // }
