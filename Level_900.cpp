@@ -131,19 +131,94 @@
 //     return 0;
 // }
 
-//Problem?? HQ9+
+// Problem?? HQ9+
 
-#include <iostream>
-using namespace std;
-int main (){
-    string code;
-    cin>>code;
-    for(int i=0; i<code.length();i++){
-        if(code[i]=='H' || code[i]=='Q' || code[i]=='9'){
-            cout<<"YES";
-            return 0;
-        }
-    }
-    cout<<"NO";
-    return 0;
-}
+// #include <iostream>
+// using namespace std;
+// int main (){
+//     string code;
+//     cin>>code;
+//     for(int i=0; i<code.length();i++){
+//         if(code[i]=='H' || code[i]=='Q' || code[i]=='9'){
+//             cout<<"YES";
+//             return 0;
+//         }
+//     }
+//     cout<<"NO";
+//     return 0;
+// }
+
+// Problem ? Dubstep
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     string dubstep ;
+//     cin>>dubstep;
+//     string news = "";
+
+//     while(dubstep.length() >= 3 && dubstep[0] == 'W' && dubstep[1] == 'U' && dubstep[2] == 'B'){
+//         dubstep.erase(0,3);
+//     }
+//     for(int i = 2; i<dubstep.length(); i++){
+//         if(dubstep[i-2] == 'W' && dubstep[i-1] == 'U'  && dubstep[i] == 'B'){
+
+//             dubstep[i-2] = 'a';
+//             dubstep[i-1] = 'a';
+//             dubstep[i] = 'a';
+//         }
+//     } 
+//     for(int i = 1; i< dubstep.length()+1; i++){
+//         if (i == dubstep.length()) {
+//             if(dubstep[i-1] != 'a') {
+//                 news += dubstep[i-1];
+//             }
+//             break; 
+//         }
+//         if(dubstep[i-1] == 'a' && dubstep[i] == 'a'){
+//             continue;
+//         }
+//         if(dubstep[i-1] == 'a' && dubstep[i] != 'a'){
+//             news+= " ";
+//         }
+//         if(dubstep[i-1] != 'a'){
+//             news+= dubstep[i-1];
+//         }
+//     } 
+
+//     cout<<news;
+// }
+
+//OR
+// #include <iostream>
+// #include <string>
+
+// using namespace std;
+
+// int main() {
+//     string dubstep;
+//     cin >> dubstep;
+
+//     bool isFirstWord = true;
+
+//     for (int i = 0; i < dubstep.length(); i++) {
+//         // Check if the next 3 characters form "WUB"
+//         if (i + 2 < dubstep.length() && dubstep[i] == 'W' && dubstep[i+1] == 'U' && dubstep[i+2] == 'B') {
+//             i += 2; // Skip the "WUB" (the loop's i++ will make it a total skip of 3)
+            
+//             // If we already printed a word, we might need a space before the next one
+//             if (!isFirstWord) {
+//                 cout << " ";
+//                 isFirstWord = true; // Reset so we don't print multiple spaces for consecutive WUBs
+//             }
+//         } else {
+//             cout << dubstep[i];
+//             isFirstWord = false; // We just printed a character, so the first word has started
+//         }
+//     }
+
+//     return 0;
+// }
+
+
