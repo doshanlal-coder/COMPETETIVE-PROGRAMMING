@@ -222,3 +222,21 @@
 // }
 
 
+//Problem ? Puzzles
+
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main (){
+    int n, m;
+    int arr[m];
+    cin>>n>>m;
+    for(int i = 0; i<m ; i++){
+        cin>>arr[i];
+    }
+    sort(arr, arr+ sizeof(arr)/ sizeof(arr[0]));
+
+    cout<<arr[m]-arr[0];
+    return 0;
+
+}

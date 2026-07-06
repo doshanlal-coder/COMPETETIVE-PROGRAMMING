@@ -143,20 +143,49 @@
 
 //8/ Boy Or Girl
 
-#include <iostream>
-using namespace std;
-int main (){
-    string name;
-    int count=0;
-    cin>>name;
-    for(char ch='a' ;ch<='z'; ch++){
-        for(int i=0; i<name.size(); i++){
-            if(ch==name[i]){
-                count++;
-                break;
-            }
-        }
-    }
-    cout<<((count%2==0)? "CHAT WITH HER!": "IGNORE HIM!");
-    return 0;
-}
+// #include <iostream>
+// using namespace std;
+// int main (){
+//     string name;
+//     int count=0;
+//     cin>>name;
+//     for(char ch='a' ;ch<='z'; ch++){
+//         for(int i=0; i<name.size(); i++){
+//             if(ch==name[i]){
+//                 count++;
+//                 break;
+//             }
+//         }
+//     }
+//     cout<<((count%2==0)? "CHAT WITH HER!": "IGNORE HIM!");
+//     return 0;
+// }
+
+
+//Problem? HULK
+
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+
+
+//     if(n%2 == 0){
+//         for(int i = 0 ; i< (n-2)/2 ; i++){
+//             cout<<"I hate that I love that ";
+//         }
+//         cout<<"I hate that I love it";
+//     }else{
+//         for(int i = 0 ; i< (n-1)/2 ; i++){
+//             cout<<"I hate that I love that ";
+//         }
+//         cout<<"I hate it";
+//     }
+//     return 0;
+
+// }
+
+
+
+//Problem? 
