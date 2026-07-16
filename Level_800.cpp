@@ -188,4 +188,37 @@
 
 
 
-//Problem? 
+//Problem? Bear and Big Brother
+
+// #include <iostream> 
+// using namespace std;
+// int main (){
+//     int a,b;
+//     cin>>a>>b;
+//     int years = 0;
+//     while(a<=b){
+//         a = 3*a;
+//         b = 2*b;
+//         years++;
+//     }
+//     cout<<years;
+//     return 0;
+// }
+
+//Problem ? word capitalization
+
+#include <iostream>
+using namespace std;
+int main (){
+    string word;
+    cin>>word;
+
+    for(char c = 'a', C = 'A'; c <= 'z', C <= 'Z' ; c++, C++ ){
+        if(word[0] == c){
+            word[0] = C;
+            break;
+        }
+    }
+    cout<<word;
+    return 0;
+}
