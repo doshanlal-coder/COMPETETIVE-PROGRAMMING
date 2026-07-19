@@ -168,13 +168,13 @@
 //             dubstep[i-1] = 'a';
 //             dubstep[i] = 'a';
 //         }
-//     } 
+//     }
 //     for(int i = 1; i< dubstep.length()+1; i++){
 //         if (i == dubstep.length()) {
 //             if(dubstep[i-1] != 'a') {
 //                 news += dubstep[i-1];
 //             }
-//             break; 
+//             break;
 //         }
 //         if(dubstep[i-1] == 'a' && dubstep[i] == 'a'){
 //             continue;
@@ -185,14 +185,14 @@
 //         if(dubstep[i-1] != 'a'){
 //             news+= dubstep[i-1];
 //         }
-//     } 
+//     }
 
 //     cout<<news;
 // }
 
-//OR
-// #include <iostream>
-// #include <string>
+// OR
+//  #include <iostream>
+//  #include <string>
 
 // using namespace std;
 
@@ -206,7 +206,7 @@
 //         // Check if the next 3 characters form "WUB"
 //         if (i + 2 < dubstep.length() && dubstep[i] == 'W' && dubstep[i+1] == 'U' && dubstep[i+2] == 'B') {
 //             i += 2; // Skip the "WUB" (the loop's i++ will make it a total skip of 3)
-            
+
 //             // If we already printed a word, we might need a space before the next one
 //             if (!isFirstWord) {
 //                 cout << " ";
@@ -221,22 +221,65 @@
 //     return 0;
 // }
 
+// Problem ? Puzzles
 
-//Problem ? Puzzles
+// #include <iostream>
+// #include <algorithm>
+// using namespace std;
+// int main (){
+//     int n, m;
+//     int arr[m];
+//     cin>>n>>m;
+//     for(int i = 0; i<m ; i++){
+//         cin>>arr[i];
+//     }
+//     sort(arr, arr+ sizeof(arr)/ sizeof(arr[0]));
 
-#include <iostream>
-#include <algorithm>
-using namespace std;
-int main (){
-    int n, m;
-    int arr[m];
-    cin>>n>>m;
-    for(int i = 0; i<m ; i++){
-        cin>>arr[i];
-    }
-    sort(arr, arr+ sizeof(arr)/ sizeof(arr[0]));
+//     cout<<arr[m]-arr[0];
+//     return 0;
 
-    cout<<arr[m]-arr[0];
-    return 0;
+// }
 
-}
+// Problem? Kefa and first step
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin >> n;
+//     int arr[n];
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
+//     int count = 1;
+//     int max_count = 1;
+
+//     if (n > 1)
+//     {
+//         for (int i = 0; i < n - 1; i++)
+//         {
+//             if (arr[i] <= arr[i + 1])
+//             {
+//                 count++;
+//                 if (max_count <= count)
+//                 {
+//                     max_count = count;
+//                 }
+//             }
+//             else
+//             {
+//                 count = 1;
+//             }
+//         }
+//     cout << max_count;
+
+//     }
+//     else
+//     {
+//         cout << 1;
+//     }
+
+//     return 0;
+// }
