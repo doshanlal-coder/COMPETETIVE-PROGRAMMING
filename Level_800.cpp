@@ -207,18 +207,33 @@
 
 //Problem ? word capitalization
 
-#include <iostream>
-using namespace std;
-int main (){
-    string word;
-    cin>>word;
+// #include <iostream>
+// using namespace std;
+// int main (){
+//     string word;
+//     cin>>word;
 
-    for(char c = 'a', C = 'A'; c <= 'z', C <= 'Z' ; c++, C++ ){
-        if(word[0] == c){
-            word[0] = C;
-            break;
-        }
-    }
-    cout<<word;
-    return 0;
-}
+//     for(char c = 'a', C = 'A'; c <= 'z', C <= 'Z' ; c++, C++ ){
+//         if(word[0] == c){
+//             word[0] = C;
+//             break;
+//         }
+//     }
+//     cout<<word;
+//     return 0;
+// }
+
+
+//Problem /  The New Year: Meeting Friends
+
+// #include <iostream>
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main (){
+//     int arr[3];
+//     cin>>arr[0]>>arr[1]>>arr[2];
+//     sort(arr, arr+3);
+
+//     cout<<arr[2]-arr[0];
+//     return 0;
+// }
