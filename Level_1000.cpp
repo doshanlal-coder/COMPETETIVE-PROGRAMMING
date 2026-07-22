@@ -146,3 +146,35 @@
 // }
 
 
+//Problem? CAPS
+
+// #include <iostream>
+// #include <string>
+// #include <cctype>
+// using namespace std;
+// int main (){
+//     string word; 
+//     cin>>word;
+
+//     bool should_change = true;
+//     for(int i = 1 ; i<word.length() ; i++){
+//         if(islower(word[i])){
+//             should_change = false;
+//             break;
+//         }
+//     }
+//     if(should_change){
+//         for(int i = 0; i<word.length() ; i++){
+        
+//             if(islower(word[i])){
+//                 word[i] = toupper(word[i]);
+//             }else{
+//                 word[i] = tolower(word[i]);
+//             }
+//         }
+//     }
+//     cout<<word;
+//     return 0;
+// }
+
+
