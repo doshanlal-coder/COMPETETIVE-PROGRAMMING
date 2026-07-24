@@ -283,3 +283,29 @@
 
 //     return 0;
 // }
+
+/// Problem > Odd divisor
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin >> n;
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         long long x;
+//         cin >>x;
+
+//         while(x % 2 == 0){
+//             x/= 2;
+//         }
+//         if(x > 1){
+//             cout<<"Yes"<<endl;
+//         }else{
+//             cout<<"No"<<endl;
+//         }
+//     }
+//     return 0;
+// }
