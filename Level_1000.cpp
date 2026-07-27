@@ -145,15 +145,14 @@
 //     return 0;
 // }
 
-
-//Problem? CAPS
+// Problem? CAPS
 
 // #include <iostream>
 // #include <string>
 // #include <cctype>
 // using namespace std;
 // int main (){
-//     string word; 
+//     string word;
 //     cin>>word;
 
 //     bool should_change = true;
@@ -165,7 +164,7 @@
 //     }
 //     if(should_change){
 //         for(int i = 0; i<word.length() ; i++){
-        
+
 //             if(islower(word[i])){
 //                 word[i] = toupper(word[i]);
 //             }else{
@@ -175,6 +174,84 @@
 //     }
 //     cout<<word;
 //     return 0;
+// }
+
+/// Xenia and Ringroad
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     long long n, m;
+//     cin >> n >> m;
+//     long long time = 0;
+//     long long target;
+//     long long current = 1;
+
+//     for (long long i = 0; i < m; i++)
+//     {
+//         cin >> target;
+//         if (target >= current)
+//         {
+//             time += target - current;
+//             current = target;
+//         }
+//         else
+//         {
+//             time += (n - current) + target;
+//             current = target;
+//         }
+//     }
+
+//     cout << time;
+//     return 0;
+// }
+
+// Dragons?
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+// void bubbleSort(vector<int> &vec, int n, vector<int> &bonus)
+// {
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < n - i - 1; j++)
+//         {
+
+//             if (vec[j] > vec[j + 1])
+//             {
+//                 swap(vec[j], vec[j + 1]);
+//                 swap(bonus[j], bonus[j + 1]);
+//             }
+//         }
+//     }
+// }
+
+// int main()
+// {
+//     int s, n;
+//     cin >> s >> n;
+//     vector<int> s_drg(n);
+//     vector<int> bonus(n);
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> s_drg[i];
+//         cin >> bonus[i];
+//     }
+//     bubbleSort(s_drg, n, bonus);
+
+//     for(int i = 0; i< n ; i++){
+//         if(s>s_drg[i]){
+//             s+= bonus[i];
+//         }else{
+//             cout<<"NO"<<endl;
+//             return 0;
+//         }
+//     }
+//     cout<<"YES"<<endl;
+
 // }
 
 

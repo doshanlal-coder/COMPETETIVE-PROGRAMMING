@@ -309,3 +309,57 @@
 //     }
 //     return 0;
 // }
+
+// Problem? Divide by two or six
+
+// #include <iostream>
+// using namespace std;
+// void check(int num)
+// {
+//     int count_two = 0;
+//     int count_three = 0;
+//     int count = 0;
+
+//     while(num%2 ==0){
+//         if (num % 2 == 0)
+//         {
+//             num = num / 2;
+//             count_two++;
+//         }
+//     }
+//     while (num % 3 == 0)
+//     {
+//         if (num % 3 == 0)
+//         {
+//             num = num / 3;
+//             count_three++;
+//         }
+//     }
+//     if (count_two > count_three)
+//     {
+//         cout << -1 << endl;
+//         return;
+//     }
+
+//     if (count_three >= count_two)
+//     {
+//         count = 2*count_three - count_two;
+//     }
+//     if(num ==1 ){
+//         cout<<count<<endl;
+//     }else{
+//         cout<<-1<<endl;
+//     }
+// }
+// int main()
+// {
+//     int n;
+//     cin >> n;
+//     for (int i = 0; i < n; i++)
+//     {
+//         int num;
+//         cin >> num;
+//         check(num);
+//     }
+//     return 0;
+// }
