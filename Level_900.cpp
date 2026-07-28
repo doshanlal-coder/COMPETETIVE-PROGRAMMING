@@ -363,3 +363,39 @@
 //     }
 //     return 0;
 // }
+
+//Problem ? Keyboard
+
+// #include <iostream>
+// using namespace std;
+// int main (){
+//     char ch ;
+//     cin>>ch;
+//     string type;
+//     cin>>type;
+//     string actual = "qwertyuiopasdfghjkl;zxcvbnm,./";
+
+//     string ans = "";
+//     if(ch== 'L'){
+//         for(int i = 0; i< type.length() ; i++){
+//             for(int j = 0; j< actual.length() ; j++){
+//                 if(type[i] == actual[j]){
+//                     ans += actual[j+1];
+//                     break;
+//                 }
+//             }
+//         }
+
+//     }else if(ch== 'R'){
+//         for(int i = 0; i< type.length() ; i++){
+//             for(int j = 0; j< actual.length() ; j++){
+//                 if(type[i] == actual[j]){
+//                     ans += actual[j-1];
+//                     break;
+//                 }
+//             }
+//         }
+//     }
+//     cout<<ans<<endl;
+//     return 0;
+// }
