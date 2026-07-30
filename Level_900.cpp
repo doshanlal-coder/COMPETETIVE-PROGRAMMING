@@ -399,3 +399,36 @@
 //     cout<<ans<<endl;
 //     return 0;
 // }
+
+
+//Problem? A. Olesya and Rodion
+
+// #include <iostream>
+// using namespace std;
+// int main (){
+//     int n, t;
+//     cin>>n>>t;
+
+//     string ans = "";
+
+//     if(n == 1 and t == 10){
+//         cout<<-1<<"\n";
+//         return 0;
+//     }
+    
+//     if(t != 10){
+//         ans += to_string(t);
+//         for(int i = 0;i < n-1 ; i++){
+//             ans += '0';
+//         }
+//     }else{
+//         ans += '1';
+//         for(int i = 0; i< n-1 ; i++){
+//             ans += '0';
+//         }
+//     }
+//     cout<<ans<<"\n";
+
+
+// }
+
