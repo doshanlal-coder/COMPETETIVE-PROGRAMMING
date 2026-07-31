@@ -364,7 +364,7 @@
 //     return 0;
 // }
 
-//Problem ? Keyboard
+// Problem ? Keyboard
 
 // #include <iostream>
 // using namespace std;
@@ -400,8 +400,7 @@
 //     return 0;
 // }
 
-
-//Problem? A. Olesya and Rodion
+// Problem? A. Olesya and Rodion
 
 // #include <iostream>
 // using namespace std;
@@ -415,7 +414,7 @@
 //         cout<<-1<<"\n";
 //         return 0;
 //     }
-    
+
 //     if(t != 10){
 //         ans += to_string(t);
 //         for(int i = 0;i < n-1 ; i++){
@@ -429,6 +428,7 @@
 //     }
 //     cout<<ans<<"\n";
 
-
 // }
+
+////Problem? Games with stick
 
