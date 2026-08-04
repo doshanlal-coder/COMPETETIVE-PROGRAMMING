@@ -256,30 +256,30 @@
 
 // Problem? Dreamoon and Stairs
 
-#include <iostream>
-using namespace std;
-int main()
-{
-    int n, m;
-    cin >> n >> m;
-    if (m > n)
-    {
-        cout << -1;
-        return 0;
-    }
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n, m;
+//     cin >> n >> m;
+//     if (m > n)
+//     {
+//         cout << -1;
+//         return 0;
+//     }
 
-    int step;
-    if (n % 2 == 0)
-    {
-        step = n / 2;
-    }
-    else
-    {
-        step = n / 2 + 1;
-    }
-    while (step % m != 0 and step <= n)
-    {
-        step += 1;
-    }
-    cout << step;
-}
+//     int step;
+//     if (n % 2 == 0)
+//     {
+//         step = n / 2;
+//     }
+//     else
+//     {
+//         step = n / 2 + 1;
+//     }
+//     while (step % m != 0 and step <= n)
+//     {
+//         step += 1;
+//     }
+//     cout << step;
+// }
