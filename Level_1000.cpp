@@ -283,3 +283,50 @@
 //     }
 //     cout << step;
 // }
+
+/// Problem ? Football
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+
+    string first, sec;
+    int t1 = 0;
+    int t2 = 0;
+
+    string s;
+    for (int i = 0; i < n; i++)
+    {
+        cin >> s;
+        
+        if (i == 0) 
+        {
+            first = s;
+            t1++;
+        }
+        else if (s == first)
+        {
+            t1++;
+        }
+        else
+        {
+            sec = s;
+            t2++;
+        }
+    }
+
+    if (t1 > t2)
+    {
+        cout << first << "\n";
+    }
+    else
+    {
+        cout << sec << "\n";
+    }
+    
+    return 0;
+}
