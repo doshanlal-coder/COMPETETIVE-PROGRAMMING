@@ -1,4 +1,4 @@
-//1//Watermelon
+// 1//Watermelon
 
 // #include <iostream>
 // using namespace std;
@@ -9,11 +9,7 @@
 //     return 0;
 // }
 
-
-
-
-
-//2//Way Too Long Words
+// 2//Way Too Long Words
 
 // #include <iostream>
 // #include <string>
@@ -28,9 +24,7 @@
 //     }
 // }
 
-
-
-//3//Elephants
+// 3//Elephants
 
 // #include <iostream>
 // using namespace std;
@@ -49,11 +43,11 @@
 //     int x;
 //     cin >> x;
 //     cout << ((x % 5 == 0) ? x / 5 : x / 5 + 1) << endl;
-    
+
 //     return 0;
 // }
 
-//4//Team
+// 4//Team
 
 // #include <iostream>
 // using namespace std;
@@ -71,8 +65,7 @@
 //     return 0;
 // }
 
-//5//Bit++
-
+// 5//Bit++
 
 // #include <iostream>
 // using namespace std;
@@ -89,7 +82,7 @@
 //     return 0;
 // }
 
-//6//Next Round
+// 6//Next Round
 
 // #include <iostream>
 // #include <vector>
@@ -107,17 +100,15 @@
 //     }
 //     for(int i=0; i<n ; i++){
 //        if(score[i]>=score[k-1] and score[i]>0){
-//         part++; 
+//         part++;
 //        }
 //     }
-
 
 //     cout<<part;
 //     return 0;
 // }
 
-
-//7// Domino Pilling
+// 7// Domino Pilling
 
 // #include <iostream>
 // using namespace std;
@@ -129,19 +120,17 @@
 //     return 0;
 // }
 
+// OR
+//  #include <iostream>
+//  using namespace std;
+//  int main (){
+//      int m, n ;
+//      cin>>m>>n;
+//      cout<<(m*n)/2;
+//      return 0;
+//  }
 
-//OR
-// #include <iostream>
-// using namespace std;
-// int main (){
-//     int m, n ;
-//     cin>>m>>n;
-//     cout<<(m*n)/2;
-//     return 0;
-// }
-
-
-//8/ Boy Or Girl
+// 8/ Boy Or Girl
 
 // #include <iostream>
 // using namespace std;
@@ -161,15 +150,13 @@
 //     return 0;
 // }
 
-
-//Problem? HULK
+// Problem? HULK
 
 // #include <iostream>
 // using namespace std;
 // int main(){
 //     int n;
 //     cin>>n;
-
 
 //     if(n%2 == 0){
 //         for(int i = 0 ; i< (n-2)/2 ; i++){
@@ -186,11 +173,9 @@
 
 // }
 
+// Problem? Bear and Big Brother
 
-
-//Problem? Bear and Big Brother
-
-// #include <iostream> 
+// #include <iostream>
 // using namespace std;
 // int main (){
 //     int a,b;
@@ -205,7 +190,7 @@
 //     return 0;
 // }
 
-//Problem ? word capitalization
+// Problem ? word capitalization
 
 // #include <iostream>
 // using namespace std;
@@ -223,8 +208,7 @@
 //     return 0;
 // }
 
-
-//Problem /  The New Year: Meeting Friends
+// Problem /  The New Year: Meeting Friends
 
 // #include <iostream>
 // #include <bits/stdc++.h>
@@ -238,7 +222,56 @@
 //     return 0;
 // }
 
+// Problem A. SauSaGe Bank
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// #define ll long long
+// int main(){
+//     // ll test, n, k;
+//     // cin>>test;
+//     // for(int i = 0 ; i<test; i++){
+//     //     cin>>n>>k;
+//     //     ll result = (k - 1) * 2 + (1LL << (n - k + 1));
+//     //     cout<<result<<endl;
+//     // }
+//     cout<<(1ll << 62); // it can calculate 2 to power up 62
+//     return 0;
+// }
 
+// Problem A. Turn Into a Palindrome
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin >> n;
+//     int s;
+//     char ch;
+//     string stg;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> s >> ch >> stg;
+
+//         int l = 0, r = stg.length()-1;
+//         int coin = 0;
+//         while (l <= r)
+//         {
+//             if (stg[l] == stg[r])
+//             {
+//                 l++, r--;
+//                 continue;
+//             }else if(stg[l] == ch or stg[r] == ch){
+//                 l++, r--;
+//                 coin++;
+//             }else if(stg[l] != ch and stg[r] != ch){
+//                 l++, r--;
+//                 coin+=2;
+//             }
+//         }
+//         cout<<coin<<"\n";
+//     }
+//     return 0;
+// }
 

@@ -430,5 +430,23 @@
 
 // }
 
-////Problem? Games with stick
+////Problem? B. Sale
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int m,n;
+//     cin>>n>>m;
+//     vector <int> v(n);
+//     for(int i = 0 ; i<n ;i++){
+//         cin>>v[i];
+//     }
+//     sort(v.begin(), v.end());
+//     int profit = 0;
+//     for(int i = 0 ; i < m ; i++){
+//         if(v[i] < 0){
+//             profit -= v[i]; 
+//         }
+//     }
+//     cout<<profit;
+// }

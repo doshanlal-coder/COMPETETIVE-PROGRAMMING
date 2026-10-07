@@ -302,8 +302,8 @@
 //     for (int i = 0; i < n; i++)
 //     {
 //         cin >> s;
-        
-//         if (i == 0) 
+
+//         if (i == 0)
 //         {
 //             first = s;
 //             t1++;
@@ -327,6 +327,43 @@
 //     {
 //         cout << sec << "\n";
 //     }
-    
+
 //     return 0;
 // }
+
+// Problem? C1. Marenol (easy version)
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin >> n;
+//     while(n--){
+//         int l;
+//         cin>>l;
+//         string a, b;
+//         cin>>a>>b;
+//         int odd1 = 0, odd0 = 0, even1 = 0, even0 = 0;
+        
+//         for(int i = 0; i< l; i++){
+//             if(i%2 == 1 and a[i] == '1') odd1++;
+//             if(i%2 == 1 and b[i] == '1') odd1--;
+
+//             if(i%2 == 0 and a[i] == '1') even1++;
+//             if(i%2 == 0 and b[i] == '1') even1--;
+
+//             if(i%2 == 1 and a[i] == '0') odd0++;
+//             if(i%2 == 1 and b[i] == '0') odd0--;
+
+//             if(i%2 == 0 and a[i] == '0') even0++;
+//             if(i%2 == 0 and b[i] == '0') even0--;
+//         }
+//         if(odd1 == 0 and odd0 == 0 and even1 == 0 and even0 == 0){
+//             cout<<"Yes\n";
+//         }else{
+//             cout<<"No\n";
+//         }
+//     }
+// }
+
