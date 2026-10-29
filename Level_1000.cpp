@@ -345,7 +345,7 @@
 //         string a, b;
 //         cin>>a>>b;
 //         int odd1 = 0, odd0 = 0, even1 = 0, even0 = 0;
-        
+
 //         for(int i = 0; i< l; i++){
 //             if(i%2 == 1 and a[i] == '1') odd1++;
 //             if(i%2 == 1 and b[i] == '1') odd1--;
@@ -370,28 +370,28 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//B. Even Modulo Pair
-// #include <bits/stdc++.h>
-// using namespace std;
-// int main(){
-//     int t;
-//     cin>>t;
-//     while(t--){
-//         int n;
-//         cin>>n;
-//         vector <int> v(n);
-//         for(int i = 0 ; i < n ; i++){
-//             cin>>v[i];
-//         }
-//         bool flag = true;
-//         for(int i = 0 ; i < n-1 ; i++){
-//             for(int j = i+1 ; j<n ; j++){
-//                 if((v[j]%v[i] )%2 == 0){
-//                     cout<<v[i]<<" "<<v[j]<<"\n";
-//                     flag = false;
-//                     break;
-//                 }
-                
+// B. Even Modulo Pair
+//  #include <bits/stdc++.h>
+//  using namespace std;
+//  int main(){
+//      int t;
+//      cin>>t;
+//      while(t--){
+//          int n;
+//          cin>>n;
+//          vector <int> v(n);
+//          for(int i = 0 ; i < n ; i++){
+//              cin>>v[i];
+//          }
+//          bool flag = true;
+//          for(int i = 0 ; i < n-1 ; i++){
+//              for(int j = i+1 ; j<n ; j++){
+//                  if((v[j]%v[i] )%2 == 0){
+//                      cout<<v[i]<<" "<<v[j]<<"\n";
+//                      flag = false;
+//                      break;
+//                  }
+
 //             }
 //             if(!flag) break;
 //         }
@@ -512,27 +512,117 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//A. Robot Odd Moves
-// #include <bits/stdc++.h>
-// using namespace std;
-// int main(){
-//     int t;
-//     cin>>t;
-//     while(t--){
-//         int a,b;
-//         cin>>a>>b;
-//         if(b > a+1) cout<<-1<<"\n";
-//         else{
-//             if(a == b) cout<<a<<"\n";
-//             else if(b>a) cout<<b<<"\n";
-//             else if(a>b){
-//                 if(a%2 == 0 and b%2 == 0) cout<<a<<"\n";
-//                 else if(a%2 == 1 and b%2 == 1) cout<<a<<"\n";
-//                 else cout<<a+1<<"\n";
-//             }
-//         }
-//     }
-// }
+// A. Robot Odd Moves
+//  #include <bits/stdc++.h>
+//  using namespace std;
+//  int main(){
+//      int t;
+//      cin>>t;
+//      while(t--){
+//          int a,b;
+//          cin>>a>>b;
+//          if(b > a+1) cout<<-1<<"\n";
+//          else{
+//              if(a == b) cout<<a<<"\n";
+//              else if(b>a) cout<<b<<"\n";
+//              else if(a>b){
+//                  if(a%2 == 0 and b%2 == 0) cout<<a<<"\n";
+//                  else if(a%2 == 1 and b%2 == 1) cout<<a<<"\n";
+//                  else cout<<a+1<<"\n";
+//              }
+//          }
+//      }
+//  }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// B. Sequence Decreasing
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// void solve() {
+//     int n;
+//     cin >> n;
+    
+//     vector<int> a(n);
+//     for (int i = 0; i < n; i++) {
+//         cin >> a[i];
+//     }
+    
+//     sort(a.begin(), a.end());
+    
+//     if (a[0] != 0) {
+//         cout << 0 << "\n";
+//         return;
+//     }
+    
+//     int count = 1;
+    
+//     for (int i = 0; i < n - 1; i++) {
+//         if (a[i + 1] == a[i] || a[i + 1] == a[i] + 1) {
+//             count++;
+//         } else {
+//             break; 
+//         }
+//     }
+    
+//     cout << count << "\n";
+// }
+
+// int main() {
+//     int t;
+//     cin >> t;
+//     while (t--) {
+//         solve();
+//     }
+    
+//     return 0;
+// }
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+void solve() {
+    int n;
+    cin >> n;
+    
+    vector<int> freq(n + 2, 0);
+    for (int i = 0; i < n; i++) {
+        int x;
+        cin >> x;
+        if (x <= n + 1) {
+            freq[x]++;
+        }
+    }
+    
+    int ans = 0;
+    int available = 0;
+    
+    for (int i = 0; i <= n + 1; i++) {
+        available += freq[i];
+        if (available == 0) {
+            break;
+        }
+        ans++;
+        available--;
+    }
+    
+    cout << ans << "\n";
+}
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+    
+    return 0;
+}
