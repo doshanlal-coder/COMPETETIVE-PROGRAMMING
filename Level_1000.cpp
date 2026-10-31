@@ -18,7 +18,7 @@
 //     string newStr="";
 //     getline(cin,str);
 //     for(int i=0; i<str.size();i++){
-//         for(char CH='A', ch='a'; CH<='Z',ch<='z';CH++, ch++){
+//         for(char CH='A', ch='a'; CH<='*',ch<='z';CH++, ch++){
 //             if(str[i]==CH){
 //                 str[i]=ch;
 //             }
@@ -544,29 +544,29 @@
 // void solve() {
 //     int n;
 //     cin >> n;
-    
+
 //     vector<int> a(n);
 //     for (int i = 0; i < n; i++) {
 //         cin >> a[i];
 //     }
-    
+
 //     sort(a.begin(), a.end());
-    
+
 //     if (a[0] != 0) {
 //         cout << 0 << "\n";
 //         return;
 //     }
-    
+
 //     int count = 1;
-    
+
 //     for (int i = 0; i < n - 1; i++) {
 //         if (a[i + 1] == a[i] || a[i + 1] == a[i] + 1) {
 //             count++;
 //         } else {
-//             break; 
+//             break;
 //         }
 //     }
-    
+
 //     cout << count << "\n";
 // }
 
@@ -576,53 +576,115 @@
 //     while (t--) {
 //         solve();
 //     }
-    
+
 //     return 0;
 // }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// #include <iostream>
+// #include <vector>
+// #include <algorithm>
+
+// using namespace std;
+
+// void solve() {
+//     int n;
+//     cin >> n;
+
+//     vector<int> freq(n + 2, 0);
+//     for (int i = 0; i < n; i++) {
+//         int x;
+//         cin >> x;
+//         if (x <= n + 1) {
+//             freq[x]++;
+//         }
+//     }
+
+//     int ans = 0;
+//     int available = 0;
+
+//     for (int i = 0; i <= n + 1; i++) {
+//         available += freq[i];
+//         if (available == 0) {
+//             break;
+//         }
+//         ans++;
+//         available--;
+//     }
+
+//     cout << ans << "\n";
+// }
+
+// int main() {
+//     int t;
+//     cin >> t;
+//     while (t--) {
+//         solve();
+//     }
+
+//     return 0;
+// }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-#include <iostream>
-#include <vector>
-#include <algorithm>
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int t;
+//     cin >> t;
+//     while (t--)
+//     {
+//         int n, m;
+//         cin >> n >> m;
+//         string s1, s2;
+//         cin >> s1 >> s2;
+//         for (int i = 0; i < n; i++)
+//         {
+//             for (int j = 0; j < m; j++)
+//             {
+//                 if (s1[i] == '*')
+//                     continue;
+//                 if (s1[i] == s2[j])
+//                 {
+//                     s1[i] = '*';
+//                     s2[j] = '*';
+//                     break;
+//                 }
+//             }
+//         }
+//         string temp = "";
+//         for (int i = 0; i < n; i++)
+//         {
+//             if (s1[i] != '*')
+//             {
+//                 temp = temp + s1[i];
+//             }
+//         }
+//         bool check = true;
+//         for (int i = 0; i < m; i++)
+//         {
+//             if (s2[i] != '*')
+//             {
+//                 check = false;
+//                 break;
+//             }
+//         }
+//         if (temp == "six" or temp == "isx" or temp == "xis" or temp == "ixs" or temp == "xsi" or temp == "sxi")
+//         {
+//             if (check)
+//             {
+//                 cout << "YES\n";
+//             }
+//             else
+//             {
+//                 cout << "NO\n";
+//             }
+//         }            else
+//             {
+//                 cout << "NO\n";
+//             }
 
-using namespace std;
-
-void solve() {
-    int n;
-    cin >> n;
-    
-    vector<int> freq(n + 2, 0);
-    for (int i = 0; i < n; i++) {
-        int x;
-        cin >> x;
-        if (x <= n + 1) {
-            freq[x]++;
-        }
-    }
-    
-    int ans = 0;
-    int available = 0;
-    
-    for (int i = 0; i <= n + 1; i++) {
-        available += freq[i];
-        if (available == 0) {
-            break;
-        }
-        ans++;
-        available--;
-    }
-    
-    cout << ans << "\n";
-}
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        solve();
-    }
-    
-    return 0;
-}
+//     }
+// }
